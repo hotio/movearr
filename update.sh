@@ -17,7 +17,7 @@ elif [[ ${1} == "tests" ]]; then
     echo "Show help info..."
     docker run --rm --entrypoint="" "${2}" movearr --help
 else
-    version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/l3uddz/movearr/releases/latest" | jq -r .tag_name | sed s/v//g)
+    version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/l3uddz/movearr/commits/master" | jq -r .sha)
     [[ -z ${version} ]] && exit 1
     echo '{"version":"'"${version}"'"}' | jq . > VERSION.json
 fi
