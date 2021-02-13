@@ -8,6 +8,6 @@ RUN apk add --no-cache git build-base && \
     make && \
     chmod 755 /movearr/dist/movearr_linux_amd64/movearr
 
-FROM alpine@sha256:074d3636ebda6dd446d0d00304c4454f468237fdacf08fb0eeac90bdbfa1bac7
+FROM alpine@sha256:3747d4eb5e7f0825d54c8e80452f1e245e24bd715972c919d189a62da97af2ae
 ENTRYPOINT ["movearr"]
 COPY --from=builder /movearr/dist/movearr_linux_amd64/movearr /usr/local/bin/
