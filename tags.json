@@ -1,25 +1,25 @@
 {
   "tags": [
-      {
+    {
       "name": "release",
       "version": "",
       "commit": "",
       "upstream": "Releases",
       "lastUpdated": ""
-      },
-      {
+    },
+    {
       "name": "testing",
       "version": "",
       "commit": "",
       "upstream": "",
       "lastUpdated": ""
-      },
-      {
+    },
+    {
       "name": "nightly",
-      "version": "",
-      "commit": "",
+      "version": "8823ec687fc4263d69680aabbeb8686535271b02",
+      "commit": "fb2a832",
       "upstream": "Every commit to master",
-      "lastUpdated": ""
-      }
+      "lastUpdated": "2021-02-23T14:34:35.039Z"
+    }
   ]
 }
